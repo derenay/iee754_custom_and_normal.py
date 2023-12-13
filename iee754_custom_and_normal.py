@@ -12,15 +12,7 @@ class Iee754_Calculator:
         self.presicion = presicion
         if not isinstance(number, float):
             raise TypeError("Number must be float")
-        """ 
-        exponent kısmı kaç bit olsun gözüküyor ama hesaplama kısmında bunun exponent değerini böyle alıroyrum bundan dolayı yanlışlık oluyor
-        exponent hesaplamada exponent değerini düzgün al
-        ve bu mantissa listi ne oluyor mantissa değerini nasıl hesaplıyoruz
-        bunun aynısı exponent içinde geçerli
-        bunu yaparsan kod biter her şey hazır 
-        kurallar yaz sayıyı kurallardan geçir  
-        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! halledildi !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        """
+        
         exponent_list: list[int] = [5, 8, 11, 15, 19]
         mantissa_list: list[int] = [10, 23, 52, 112, 236]
         
